@@ -4,24 +4,26 @@ body, html {
         }
         .result {
             position: absolute;
-            height: 320px;
+            height: auto;
             width: 100%;
             left: 0; top: 50%;
-            margin-top: -160px;
+            /* margin-top: -300px; */
+            transform: translate(0,-50%);
             text-align: center;
             padding: 10px;
             display: none;
+            
         }
         .result span {
             display: inline-block;
-            font-size: 22px;
-            width: 100px;
-			height:100px;
+            font-size: 3vw;
+            width: 12vw;
+			height:12vw;
             background: #fff;
-            line-height: 100px;
+            line-height: 12vw;
             color: #000;
-            margin: 5px;
-            border-radius: 100px;
+            margin: 1vw;
+            border-radius: 50%;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
         }
         button, input, optgroup, select, textarea {

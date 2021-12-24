@@ -54,9 +54,10 @@
             data: {
                 selected: 10,
                 running: false,
-                btns: [
-                    1, 2, 5, 10
-                ]
+                // btns: [
+                //     1, 2, 5, 10
+                // ]
+                // input:['']
             },
             mounted () {
                 canvas.innerHTML = createHTML();
@@ -77,6 +78,13 @@
                 onClick: function(num){
                     $('#result').css('display', 'none');
                     $('#main').removeClass('mask');
+                    // this.selected = num;
+                },
+                onChange: function(num){
+                    if(num>10 ||num<1){
+                        return
+                    }
+                    console.log(num)
                     this.selected = num;
                 },
                 toggle: function(){
